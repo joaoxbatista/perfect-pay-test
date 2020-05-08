@@ -1,0 +1,70 @@
+@import '../settings/_colors.sass';
+@import '../settings/_sizes.sass';
+
+.product {
+    box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+    border-radius: 4px;
+    width: 100%;
+    position: relative;
+    background: $white;
+    padding: $p-1 $p-1 $p-3 $p-1;
+    margin-top: $m-3;
+    .product__image {
+        margin: $m-1 0px;
+        text-align: center;
+        img {
+            max-width: 60%;
+        }
+    }
+    .product__name {
+        font-size: $f-3;
+        color: $gray-700;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+    }
+
+    .product__description {
+        text-align: center;
+        font-size: $f-4;
+        margin-bottom: $m-3;
+        color: $gray-600;
+    }
+    .product__price {
+        margin-bottom: $m-1;
+        text-align: center;
+        font-weight: bold;
+        font-size: $f-2;
+        color: $green;
+    }
+    .product__action {
+        margin-bottom: $m-1;
+        display: flex;
+        margin: 0 auto;
+        .btn {
+            padding:10px 10px;
+            border: 0px;
+            text-transform: uppercase;
+            color: $white;
+            font-weight: bold;
+            width: 20%;
+        } 
+
+        .btn-success {
+            background-color: $green;
+        }
+
+        input {
+            outline: none;
+            text-align: center;
+            border: none;
+            background: $gray;
+            font-weight: bold;
+            color: $black;
+            width: 60%;
+        }
+
+       
+    }
+}

@@ -1,0 +1,40 @@
+@import '../settings/_colors.sass';
+@import '../settings/_sizes.sass';
+
+.product-selecteds {
+    padding: $p-1;
+    margin-top: $m-1;
+
+
+    .products-selecteds__title {
+        font-size: $f-3;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin: $m-4 0px $m-2 0px;
+        border-top: 1px solid $gray-dark;
+        padding: $p-2;
+
+    }
+
+    .product-selected {
+        border: 1px solid $gray;
+        width: 100%;
+        position: relative;
+        background: $white;
+        padding: $p-1 $p-1 $p-3 $p-1;
+        
+       
+
+        .product-selected__image {
+            text-align: center;
+            img {
+                max-width: 100;
+            }
+        }
+    
+        .product-selected__info {
+           font-size: $f-3;
+           font-weight: bold;
+        }
+    }
+}

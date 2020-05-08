@@ -1,0 +1,10 @@
+@import '../settings/_colors.sass';
+@import '../settings/_sizes.sass';
+
+body {
+    background-color: $gray;
+}
+
+.content {
+    min-height: calc(100vh - 200px);
+}
